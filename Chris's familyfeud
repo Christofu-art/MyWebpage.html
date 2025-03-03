@@ -49,10 +49,12 @@
             // Compare the guess to the secret number
             if (userGuess == secretNumber) {
                 document.getElementById('result').innerText = 'Congratulations! You guessed it!';
-            } else if (userGuess < secretNumber) {
-                document.getElementById('result').innerText = 'Too low. Try again!';
+            } else if (secretNumber-5 <userGuess && userGuess < secretNumber+5 ) {
+                document.getElementById('result').innerText = 'Youre so close! Try again.';
+	        } else if (userGuess > secretNumber) {
+                document.getElementById('result').innerText = 'too high!';
             } else {
-                document.getElementById('result').innerText = 'Too high. Try again!';
+                document.getElementById('result').innerText = 'Too low';
             }
         }
     </script>
