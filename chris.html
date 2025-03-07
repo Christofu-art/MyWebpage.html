@@ -38,10 +38,37 @@
             },
             'library': {
                 'title': 'The Ancient Library',
+                'description': 'You find yourself surrounded by dusty books. There\'s a door to the south and also west that leads to the main hall.',
+                'image': 'library.jpg',
+                'directions': {
+                    'south': 'start',
+                    'west': 'Main Hall'
+                }
+            },
+            'laboratory': {
+                'title': 'The Alchemist\'s Laboratory',
+                'description': 'Strange potions bubble on the stove. There\'s a door to the west.',
+                'image': 'laboratory.jpg',
+                'directions': {
+                    'west': 'start',
+                    'south': 'superlab'
+                }
+            },
+            'superlab': {
+                'title': 'The SUPER Laboratory',
+                'description': 'You are in a dark, cold dungeon. There are doors to the north and east.',
+                'image': 'start-room.jpg',
+                'directions': {
+                    'north': 'laboratory',
+                    'west': 'Frankenstine'
+                }
+            },
+            'Frankenstine': {
+                'title': 'The Ancient Library',
                 'description': 'You find yourself surrounded by dusty books. There\'s a door to the south.',
                 'image': 'library.jpg',
                 'directions': {
-                    'south': 'start'
+                    'east': 'superlab'
                 }
             },
             'laboratory': {
@@ -51,29 +78,31 @@
                 'directions': {
                     'west': 'start'
                 }
-            'start': {
+            },
+            'Main Hall': {
+                'title': 'The Mysterious Dungeon',
+                'description': 'You are in a dark, cold dungeon. There are doors to the north and east.',
+                'image': 'start-room.jpg',
+                'directions': {
+                    'north': 'Hall',
+                    'east': 'library'
+                }
+            },
+            'Hall': {
+                'title': 'The Ancient Library',
+                'description': 'You find yourself surrounded by dusty books. There\'s a door to the south.',
+                'image': 'library.jpg',
+                'directions': {
+                    'east': 'DRACULA'
+                }
+            },
+            'DRACULA': {
                 'title': 'The Mysterious Dungeon',
                 'description': 'You are in a dark, cold dungeon. There are doors to the north and east.',
                 'image': 'start-room.jpg',
                 'directions': {
                     'north': 'library',
                     'east': 'laboratory'
-                }
-            },
-            'library': {
-                'title': 'The Ancient Library',
-                'description': 'You find yourself surrounded by dusty books. There\'s a door to the south.',
-                'image': 'library.jpg',
-                'directions': {
-                    'south': 'start'
-                }
-            },
-            'laboratory': {
-                'title': 'The Alchemist\'s Laboratory',
-                'description': 'Strange potions bubble on the stove. There\'s a door to the west.',
-                'image': 'laboratory.jpg',
-                'directions': {
-                    'west': 'start'
                 }
             }
         };
