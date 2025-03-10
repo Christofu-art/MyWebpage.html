@@ -47,7 +47,7 @@
             },
             'laboratory': {
                 'title': 'The Alchemist\'s Laboratory',
-                'description': 'Strange potions bubble on the stove. There\'s a door to the west.',
+                'description': 'Strange potions bubble on the stove. There\'s a door to the west and also south to the SUPER DUPER LAB.',
                 'image': 'laboratory.jpg',
                 'directions': {
                     'west': 'start',
@@ -56,7 +56,7 @@
             },
             'superlab': {
                 'title': 'The SUPER Laboratory',
-                'description': 'You are in a dark, cold dungeon. There are doors to the north and east.',
+                'description': 'You are in a dark, cold dungeon. The north to the lab is an option and there\'s a hidden trapdoor that leads to the west ',
                 'image': 'start-room.jpg',
                 'directions': {
                     'north': 'laboratory',
@@ -64,24 +64,16 @@
                 }
             },
             'Frankenstine': {
-                'title': 'The Ancient Library',
-                'description': 'You find yourself surrounded by dusty books. There\'s a door to the south.',
+                'title': 'The Experiment Lab',
+                'description': '"IT\'S ALIVE, ALIIIIIIIVE!". There\'s a door to the east.',
                 'image': 'library.jpg',
                 'directions': {
                     'east': 'superlab'
                 }
             },
-            'laboratory': {
-                'title': 'The Alchemist\'s Laboratory',
-                'description': 'Strange potions bubble on the stove. There\'s a door to the west.',
-                'image': 'laboratory.jpg',
-                'directions': {
-                    'west': 'start'
-                }
-            },
             'Main Hall': {
-                'title': 'The Mysterious Dungeon',
-                'description': 'You are in a dark, cold dungeon. There are doors to the north and east.',
+                'title': 'The Council Room',
+                'description': 'You are in what it appears to be the main hall of the council metting. There are doors to the north and east.',
                 'image': 'start-room.jpg',
                 'directions': {
                     'north': 'Hall',
@@ -89,20 +81,20 @@
                 }
             },
             'Hall': {
-                'title': 'The Ancient Library',
-                'description': 'You find yourself surrounded by dusty books. There\'s a door to the south.',
+                'title': 'The hallway',
+                'description': 'You in the hallway surrounded by doors. There\'s a door to the east.',
                 'image': 'library.jpg',
                 'directions': {
-                    'east': 'DRACULA'
+                    'east': 'DRACULA',
+                    'south': 'Main Hall'
                 }
             },
             'DRACULA': {
-                'title': 'The Mysterious Dungeon',
-                'description': 'You are in a dark, cold dungeon. There are doors to the north and east.',
+                'title': 'The Chambers room',
+                'description': 'You are in a dark, cold chambers room; There\'s an ancient coffin, . The only exit is to the west.',
                 'image': 'start-room.jpg',
                 'directions': {
-                    'north': 'library',
-                    'east': 'laboratory'
+                    'west': 'Hall',
                 }
             }
         };
