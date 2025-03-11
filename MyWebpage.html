@@ -3,12 +3,42 @@
 <head>
     <title>My CSS Example</title>
 </head>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+} 
+
+</style>
+</head>
 <body>
    
    <!-- This is a heading with in line CSS for color and font size -->
    <h1 style="color:blue; font-size: 24px;">Welcome to My page</hl>
+    <div class="gallery">
+        <a target="_blank" href="MySunshine.jpg">
+          <img src="MySunshine.jpg" alt="Click Here" width="20" height="20">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
    
-
    <!-- Paragraph -->
    <p>This is a paragraph to introduce the webpage. You can write about anything you like here.</p>
 
